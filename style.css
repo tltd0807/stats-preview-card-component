@@ -1,2 +1,82 @@
 /* font-family: 'Inter', sans-serif;
 font-family: 'Lexend Deca', sans-serif; */
+body {
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+.container {
+  min-width: 100%;
+  min-height: 100vh;
+  background-color: hsl(233, 47%, 7%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 17rem;
+  min-height: 40rem;
+  background-color: hsl(244, 38%, 16%);
+  color: hsla(0, 0%, 100%, 0.75);
+
+  border-radius: 7px;
+  overflow: hidden;
+}
+.content {
+  margin-top: 30px;
+}
+.card > div {
+  text-align: center;
+  padding: 0 30px;
+}
+.card-cover {
+  width: 100%;
+  height: 200px;
+  background: center/contain no-repeat url("./images/image-header-mobile.jpg");
+  position: relative;
+}
+.card-cover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: hsla(277, 99%, 34%, 0.449);
+}
+.card-header {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  margin-top: 20px;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 20px;
+}
+.card-header > span {
+  color: hsl(277, 64%, 61%);
+}
+.card-content {
+  line-height: 1.5rem;
+  font-size: 13px;
+  margin-bottom: 40px;
+}
+.card-info {
+  margin-bottom: 30px;
+}
+.number-info {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+.info-sub {
+  text-transform: uppercase;
+  font-size: 10px;
+  margin-top: 10px;
+}
+.attribution {
+  color: whitesmoke;
+}
+@media (min-width: 1200px) {
+}
