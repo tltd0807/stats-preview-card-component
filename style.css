@@ -15,7 +15,7 @@ body {
   align-items: center;
 }
 .card {
-  width: 17rem;
+  width: 60%;
   min-height: 40rem;
   background-color: hsl(244, 38%, 16%);
   color: hsla(0, 0%, 100%, 0.75);
@@ -32,19 +32,9 @@ body {
 }
 .card-cover {
   width: 100%;
-  height: 200px;
-  background: center/contain no-repeat url("./images/image-header-mobile.jpg");
-  position: relative;
+  background-color: hsl(277, 64%, 61%) !important;
 }
-.card-cover::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: hsla(277, 99%, 34%, 0.449);
-}
+
 .card-header {
   font-family: "Lexend Deca", sans-serif;
   font-size: 23px;
@@ -79,4 +69,24 @@ body {
   color: whitesmoke;
 }
 @media (min-width: 1200px) {
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+
+    min-height: 20rem;
+  }
+  .card-cover {
+    width: 50%;
+  }
+  .card > div {
+    padding: 0 80px 30px 50px;
+    text-align: left;
+  }
+  .container-info {
+    display: flex;
+  }
+  .card-info {
+    width: 100%;
+    text-transform: uppercase;
+  }
 }
